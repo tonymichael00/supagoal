@@ -1,5 +1,9 @@
 const Home = () => {
-  return <div className="text-3xl ">Home</div>;
+  return (
+    <div className="text-xl font-semibold text-secondary text-center">
+      What's your goal?
+    </div>
+  );
 };
 
 export default Home;

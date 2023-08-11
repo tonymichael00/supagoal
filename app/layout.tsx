@@ -18,7 +18,15 @@ export default function RootLayout({
       lang="en"
       className={`${manrope.className}`}
     >
-      <body className="text-3xl bg-black text-primary">{children}</body>
+      <body className="bg-black text-primary">
+        {' '}
+        <div className="text-4xl font-bold grid grid-rows-2">
+          <div className="text-center">
+            supa<span className="text-secondary ">goal</span>
+          </div>
+          {children}
+        </div>
+      </body>
     </html>
   );
 }
