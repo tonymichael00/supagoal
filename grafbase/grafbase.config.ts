@@ -13,12 +13,12 @@ const User = g.model('User', {
 const Goal = g.model('Goal', {
   mainGoal: g.string().length({ min: 3 }),
   miniGoals: g
-    .relation(() => miniGoal)
+    .relation(() => MiniGoal)
     .list()
     .optional(),
 });
 
-const miniGoal = g.model('miniGoal', {
+const MiniGoal = g.model('MiniGoal', {
   date: g.date(),
   summary: g.string(),
 });
