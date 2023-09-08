@@ -1,4 +1,5 @@
 'use client';
+//TODO: "GOOGLE" SHOULD SHOW INSTEAD OF USERNAME
 
 import { useEffect, useState } from 'react';
 import { getProviders, signIn } from 'next-auth/react';
