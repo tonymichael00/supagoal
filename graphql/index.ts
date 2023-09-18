@@ -5,3 +5,14 @@ query GetUser($email: String!) {
     email
   }
 }`;
+
+export const createUserMutation = `
+  mutation CreateUser($input: UserCreateInput!) {
+    userCreate(input:$input){
+      user{
+        name
+        email
+      }
+    }
+  }
+`;
