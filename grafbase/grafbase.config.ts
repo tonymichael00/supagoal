@@ -3,7 +3,6 @@ import { g, auth, config } from '@grafbase/sdk';
 const User = g
   .model('User', {
     name: g.string().length({ min: 2, max: 20 }),
-    goalDate: g.date(),
     email: g.string().unique(),
     goals: g
       .relation(() => Goal)
@@ -16,6 +15,7 @@ const User = g
 
 const Goal = g
   .model('Goal', {
+    goalDate: g.date(),
     mainGoal: g.string().length({ min: 3 }),
     miniGoals: g
       .relation(() => MiniGoal)
