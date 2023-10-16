@@ -15,13 +15,15 @@ const Navbar = async () => {
   const session = await getCurrentUser();
 
   return (
-    <nav className="text-center grid grid-cols-3">
+    <div className="text-center grid grid-cols-3">
       <div></div>
-      <div className="text-primary">
-        supa<span className="text-secondary">goal</span>
-      </div>
+      <Link href="/">
+        <div className="text-primary">
+          supa<span className="text-secondary">goal</span>
+        </div>
+      </Link>
       <NavProfile session={session} />
-    </nav>
+    </div>
   );
 };
 
