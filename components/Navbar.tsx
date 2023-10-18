@@ -17,11 +17,16 @@ const Navbar = async () => {
   return (
     <div className="text-center grid grid-cols-3">
       <div></div>
-      <Link href="/">
-        <div className="text-primary">
-          supa<span className="text-secondary">goal</span>
-        </div>
-      </Link>
+      <div className="text-primary">
+        <Link
+          href="/"
+          className=""
+        >
+          <h1>
+            supa<span className="text-secondary">goal</span>
+          </h1>
+        </Link>
+      </div>
       <NavProfile session={session} />
     </div>
   );

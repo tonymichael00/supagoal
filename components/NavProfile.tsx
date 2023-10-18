@@ -1,3 +1,5 @@
+//TODO:
+
 'use client';
 
 import Link from 'next/link';
@@ -26,45 +28,46 @@ const NavProfile = ({ session }: { session: SessionInterface }) => {
           {session?.user?.image && (
             <>
               {/* <Link href={`/profile/${session?.user?.id}`}> */}
-              <NavigationMenu className="p-1">
-                <NavigationMenuList>
-                  <NavigationMenuItem>
-                    <NavigationMenuTrigger>
-                      <Avatar>
-                        <AvatarImage
-                          className="ml-auto"
-                          src={session.user.image}
-                          width={40}
-                          height={40}
-                          alt={session.user.name}
-                        />
-                        <AvatarFallback>
-                          <img
-                            src="/avatarBlank.svg"
-                            alt="Blank Avatar"
+              <div>
+                <NavigationMenu className="p-1">
+                  <NavigationMenuList>
+                    <NavigationMenuItem>
+                      <NavigationMenuTrigger>
+                        <Avatar>
+                          <AvatarImage
+                            className="ml-auto"
+                            src={session.user.image}
+                            width={40}
+                            height={40}
+                            alt={session.user.name}
                           />
-                        </AvatarFallback>
-                      </Avatar>
-                    </NavigationMenuTrigger>
-                    <NavigationMenuContent className="text-lg font-normal text-primary grid auto-rows-auto p-2 whitespace-nowrap ">
-                      <Link href="/profile">
-                        <NavigationMenuLink>profile</NavigationMenuLink>
-                      </Link>
-                      <NavigationMenuLink>daily</NavigationMenuLink>
-                      <NavigationMenuLink>edit</NavigationMenuLink>
-                      <NavigationMenuLink>view</NavigationMenuLink>
-                      <div className="h-4"></div>
-                      <NavigationMenuLink>sign out</NavigationMenuLink>
-                    </NavigationMenuContent>
-                  </NavigationMenuItem>
-                </NavigationMenuList>
-              </NavigationMenu>
+                          <AvatarFallback>
+                            <img
+                              src="/avatarBlank.svg"
+                              alt="Blank Avatar"
+                            />
+                          </AvatarFallback>
+                        </Avatar>
+                      </NavigationMenuTrigger>
+                      <NavigationMenuContent className="text-lg font-normal text-primary grid auto-rows-auto p-2 whitespace-nowrap ">
+                        <Link href="/profile">
+                          <NavigationMenuLink>profile</NavigationMenuLink>
+                        </Link>
+                        <NavigationMenuLink>daily</NavigationMenuLink>
+                        <NavigationMenuLink>edit</NavigationMenuLink>
+                        <NavigationMenuLink>view</NavigationMenuLink>
+                        <div className="h-4"></div>
+                        <NavigationMenuLink>sign out</NavigationMenuLink>
+                      </NavigationMenuContent>
+                    </NavigationMenuItem>
+                  </NavigationMenuList>
+                </NavigationMenu>
+              </div>
               {/* </Link> */}
-              {/* <HamMenu /> */}
-              <button
+              {/* <button
                 className="text-sm"
                 // onClick={signOut}
-              ></button>
+              ></button> */}
             </>
           )}
         </>
