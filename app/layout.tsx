@@ -20,7 +20,7 @@ export default function RootLayout({
       className={`${manrope.className}`}
     >
       <body className="bg-black text-primary">
-        <div className="text-4xl font-bold grid auto-rows-min h-min">
+        <div className="text-4xl grid auto-rows-min h-min">
           <Navbar />
           {children}
         </div>

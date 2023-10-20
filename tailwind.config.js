@@ -8,6 +8,62 @@ module.exports = {
     './src/**/*.{ts,tsx}',
   ],
   theme: {
+    fontSize: {
+      sm: '0.8rem',
+      base: [
+        '1rem',
+        {
+          lineHeight: '1.25rem',
+          // letterSpacing: '0',
+          fontWeight: '500',
+        },
+      ],
+      lg: [
+        '1.25rem',
+        {
+          lineHeight: '2rem',
+          // letterSpacing: '0',
+          fontWeight: '600',
+        },
+      ],
+      xl: [
+        '1.5rem',
+        {
+          lineHeight: '2.25rem',
+          // letterSpacing: '0',
+          fontWeight: '700',
+        },
+      ],
+      '2xl': [
+        '2rem',
+        {
+          lineHeight: '2.5rem',
+          // letterSpacing: '0',
+          fontWeight: '700',
+        },
+      ],
+      '3xl': [
+        '2.5rem',
+        {
+          lineHeight: '3rem',
+          // letterSpacing: '0',
+          fontWeight: '700',
+        },
+      ],
+      '4xl': [
+        '3.0rem',
+        {
+          lineHeight: '4rem',
+          // letterSpacing: '0',
+          fontWeight: '700',
+        },
+      ],
+      // lg: '1.25rem',
+      // xl: '1.5rem',
+      // '2xl': '2rem',
+      // '3xl': '2.5rem',
+      // '4xl': '3.0rem',
+    },
     container: {
       center: true,
       padding: '2rem',
