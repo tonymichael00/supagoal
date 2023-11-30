@@ -5,13 +5,12 @@
 
 const Home = () => {
   return (
-    <div>
+    <div className="">
       <h2 className="text-xl text-primary text-center">What's your goal?</h2>
-      <h2 className="text-lg text-secondary text-center">What's your goal?</h2>
-      <p className="text-base text-white container">
+      <p className="text-base txt-box place-content-center text-white">
         This is a goal building website that uses a technique developed by
-        Michael Phelps's Coach, Bob Bowman, for setting goals. Feel free to sign
-        up and let us walk you through it!
+        Michael Phelps's Coach, Bob Bowman, for setting goals. Let us walk you
+        through it!
       </p>
     </div>
   );

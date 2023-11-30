@@ -58,11 +58,6 @@ module.exports = {
           fontWeight: '700',
         },
       ],
-      // lg: '1.25rem',
-      // xl: '1.5rem',
-      // '2xl': '2rem',
-      // '3xl': '2.5rem',
-      // '4xl': '3.0rem',
     },
     container: {
       center: true,

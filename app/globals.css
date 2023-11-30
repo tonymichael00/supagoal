@@ -74,3 +74,9 @@
     @apply bg-background text-foreground;
   }
 }
+
+@layer components {
+  .txt-box {
+    @apply max-w-prose p-2 text-center;
+  }
+}
